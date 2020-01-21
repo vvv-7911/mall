@@ -1,24 +1,2 @@
-# mall
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 详情页面评论时间的格式化
+- 通过接口得到的是时间戳 需要把它转化为 yyyy-MM-dd 格式 (1555662223 => 2020-1-20)
