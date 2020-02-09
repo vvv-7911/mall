@@ -1,6 +1,7 @@
 <template>
   <div class="goods-item" @click="itemClick">
-    <img :src="showImage" alt="" @load="imageLoad">
+    <!-- 使用了 vue-lazyload图片懒加载  :scr -> v-lazy -->
+    <img v-lazy="showImage" alt="" @load="imageLoad"> 
     <div class="goods-info">
       <p>{{goodsItem.title}}</p>
       <span class="price">{{goodsItem.price}}</span>
@@ -74,7 +75,9 @@ export default {
    left: -15px;
    top: -1px;
    width: 14px;
+   height: 13.6px;
    right: 14px;
-   background: url("~assets/img/common/collect.svg");
+   background: url('~assets/img/common/collect.svg') 0 0/14px 14px;
+   
  }
 </style>
